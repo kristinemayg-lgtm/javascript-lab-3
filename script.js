@@ -43,20 +43,20 @@ let i = 1;
 
 while (i <= 5) {
     console.log("Print i and increment");
-    break;
+    i++;
 }
 
 let j = 1;
+let k = 1;
 
 do {
     console.log("Print j j++");
-    break;
+    if (k == 3) {
+        console.log("Use break here");
+        break;
+    }  j++; k++;
 } while (j <= 5);
-
-    if (i === 3) {
-    console.log("Use break here");
-
-}
+ 
 console.log(i)
 
 if (i === 3) {
@@ -76,3 +76,4 @@ scopeExample();
 
 console.log("Outside function:");
 console.log(globalVar);
+
